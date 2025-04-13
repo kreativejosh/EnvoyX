@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { TestimonialContent } from "./TestimonialContent";
 import { TestimonialAuthor } from "./TestimonialAuthor";
@@ -73,8 +74,8 @@ export const Testimonial: React.FC = () => {
   const currentTestimonial = testimonials[currentIndex];
 
   return (
-    <section className="testimonial-section font-['Bricolage_Grotesque']">
-      <div className="max-w-none flex flex-col items-center relative bg-white mx-auto px-[140px] py-[100px] max-md:max-w-[991px] max-md:px-10 max-md:py-[60px] max-sm:max-w-screen-sm max-sm:px-5 max-sm:py-10">
+    <section className="testimonial-section py-20 font-['Bricolage_Grotesque'] bg-white">
+      <div className="max-w-none flex flex-col items-center relative mx-auto px-[140px] py-[100px] max-md:max-w-[991px] max-md:px-10 max-md:py-[60px] max-sm:max-w-screen-sm max-sm:px-5 max-sm:py-10">
         <div className="flex w-[800px] flex-col items-start gap-12 max-md:w-full">
           <TestimonialContent
             title={currentTestimonial.title}
