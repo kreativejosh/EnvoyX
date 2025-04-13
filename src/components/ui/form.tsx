@@ -59,16 +59,16 @@ const useFormField = () => {
     formDescriptionId: `${id}-form-item-description`,
     formMessageId: `${id}-form-item-message`,
     ...fieldState,
-  }
-}
+  };
+};
 
 type FormItemContextValue = {
-  id: string
-}
+  id: string;
+};
 
 const FormItemContext = React.createContext<FormItemContextValue>(
-  {} as FormItemContextValue
-)
+  {} as FormItemContextValue,
+);
 
 const FormItem = React.forwardRef<
   HTMLDivElement,
